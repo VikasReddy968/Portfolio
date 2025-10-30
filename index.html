@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Portfolio | Vikas</title>
+        <link rel="icon" href="mic.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                emailjs.init('UdhhfFZnfMhkefSq7');
+                document
+                    .getElementById('contactForm')
+                    .addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    emailjs.sendForm('service_h1g3d4s', 'template_1odcw87', this)
+                        .then(() => {
+                        alert('Message sent! I will contact you soon.');
+                        this.reset();
+                        })
+                        .catch(err => {
+                        console.error(err);
+                        alert('Oops,message not sent. Try again.');
+                        });
+                    });
+                });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>VIKAS REDDY M</h1>
+        </header>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="certificate.html">Certifications & Resume</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <div class="imgabout">
+            <div class="photo">
+                <img src="vikas.jpg" alt="M.Vikas Reddy">
+            </div>
+            <div class="aboutme">
+                <h1 class="section-title">About Me</h1>
+                <p>I am M.Vikas Reddy, a passionate software developer with skills in Python, HTML, CSS, JavaScript, SQL and DJango. I enjoy creating user friendly websites and solving coding challenges to improve my logic and problem solving skills. I am interested in both front end and back end development and aim to become a Full Stack Developer. I am always eager to learn new technologies, work on real world projects, and grow through hands on experience and collaboration.</p>
+            </div>
+        </div>
+
+        <h1 class="section-title">Skills</h1>
+        <div class="skills">
+            <section>
+                <h1 class="skill-name">Python</h1>
+                <img src="python.png" alt="Python" class="skill-icon" style="border-radius: 20px;">
+            </section>
+            <section>
+                <h1 class="skill-name">HTML</h1>
+                <img src="html5.jpg" alt="HTML" class="skill-icon">
+            </section>
+            <section>
+                <h1 class="skill-name">CSS</h1>
+                <img src="css.png" alt="CSS" class="skill-icon">
+            </section>
+            <section>
+                <h1 class="skill-name">JS</h1>
+                <img src="js.jpg" alt="JavaScript" class="skill-icon">
+            </section>
+            <section>
+                <h1 class="skill-name">SQL</h1>
+                <img src="sql.jpg" alt="SQL" class="skill-icon">
+            </section>
+            <section>
+                <h1 class="skill-name">DJango</h1>
+                <img src="djangologo.png" alt="DJango" class="skill-icon">
+            </section>
+        </div>
+
+        <h1 class="section-title">Projects</h1>
+        <div class="project">
+            <h2>Python | Internship</h2>
+            <h3>Title : Expense Tracker</h3>
+            <p>Developed a Python-based expense tracker to help users manage and categorize daily spending. The application allows users to add, edit, and delete expenses, view total expenditure, and generate category-wise summaries. Data is stored locally using sqlite,with user-friendly input via command-line. </p>
+            <a href="https://github.com/VikasReddy968/Personal_Expense_Tracker/blob/main/Personal_Expense_Tracker/index.html" target="_blank">🔗 Link</a>
+        </div>
+        <div class="project">
+            <h2>Full Stack Web Devlopment</h2>
+            <h3>Title : Online Quiz Application</h3>
+            <p>Developed a web-based quiz application to facilitate secure and interactive online examinations.Implemented user authentication, dynamic question generation, scoring, and result tracking functionalities.Compared different backend logic and data handling approaches to optimize performance and reliability.</p>
+            <a href="https://github.com/VikasReddy968/QUIZ_APPLICATION_DJANGO/blob/main/readme.md" target="_blank">🔗 Link</a>
+        </div>
+
+        <div class="project">
+            <h2>Portfolio Website</h2>
+            <h3>Title : Portfolio Website Using HTML, CSS & JavaScript</h3>
+            <p>To design and develop a personal portfolio website that showcases my skills, projects, certifications and contact details. The goal is to create a professional online presence for internship and job opportunities, while also improving my front-end development skills using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/VikasReddy968/Portfolio/blob/main/index.html" target="_blank">🔗 Link</a>
+        </div>
+
+        <h1 class="section-title">Certifications & Resume</h1>
+        <div class="certificate">
+                        <section>
+                <h1 class="certification-name">Python</h1>
+                <img src="python.png" alt="Python" class="certification-icon" style="border-radius: 20px;">
+                <a href="Python.pdf" target="_blank" download class="view-certificate">View</a>
+            </section>
+            <section>
+                <h1 class="certification-name">HTML</h1>
+                <img src="html5.jpg" alt="HTML" class="certification-icon">
+                <a href="HTML5.pdf" target="_blank" download class="view-certificate">View</a>
+            </section>
+            <section>
+                <h1 class="certification-name">JS</h1>
+                <img src="js.jpg" alt="JavaScript" class="certification-icon">
+                <a href="Javascript.pdf" target="_blank" download class="view-certificate">View</a>
+            </section>
+            <section>
+                <h1 class="certification-name">SQL</h1>
+                <img src="sql.jpg" alt="SQL" class="certification-icon">
+                <a href="SQL.pdf" target="_blank" download class="view-certificate">View</a>
+            </section>
+            <section>
+                <h1 class="certification-name">AWS</h1>
+                <img src="awslogo.png" alt="AWS" class="certification-icon">
+                <a href="AWS.pdf" target="_blank" download class="view-certificate">View</a>
+            </section>
+            <section>
+                <h1 class="certification-name">Resume</h1>
+                <img src="resume.jpg" alt="Resume" class="">
+                <a href="Vikas_Reddy_Resume.pdf" target="_blank" download class="download-resume">View</a>
+            </section>
+        </div>
+
+        <h1 class="section-title">Contact Me</h1>
+        <div class="form">
+            <form id="contactForm">
+                <p>Stay Connected</p>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" maxlength="100" required></textarea>
+                </div>
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </div>
+
+        <footer class="foot">
+            <h1>&copy; 2025 • Vikas Reddy • All Rights Reserved.</h1>
+            <div class="socialmedia">
+                <a href="https://www.instagram.com/vikas_reddy_m_2004?utm_source=qr&igsh=MTk4azhxZmZmMzY0bQ==" target="_blank"><img src="instalogoo.jpg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/vikasreddyminamareddy/" target="_blank"><img src="linked.png" alt="Linkedin"></a>
+                <a href="https://github.com/VikasReddy968" target="_blank"><img src="gitt.png" alt="GitHub" ></a>
+                <!--<a href="#" target="_blank"><img src="twitx.avif" alt="X"></a> -->
+            </div>
+        </footer>
+    </body>
+</html>
